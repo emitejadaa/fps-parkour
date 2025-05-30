@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class MercanciaScript : MonoBehaviour
 {
-    public int scorePoints;
+    public int precio;
+    DineroManager dineroManager;
+
+    private void Start()
+    {
+        dineroManager = FindObjectOfType<DineroManager>();
+    }
+
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name=="Player")
+        if(collision.gameObject.CompareTag("Player"))
         {
+            dineroManager.UpdateMoney(-precio);
             Destroy(gameObject);
         }
     }
