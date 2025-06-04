@@ -1,25 +1,48 @@
 fileFormatVersion: 2
-guid: cc5d4102a2043684598b195e07e94832
+guid: 539f0c825a291cd45a11d0a19e36337b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: caja
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Caja
+    100000: columna6x0.3
+    100002: //RootNode
+    100004: plataforma4x4
+    100006: viga 4x0.3
+    400000: columna6x0.3
+    400002: //RootNode
+    400004: plataforma4x4
+    400006: viga 4x0.3
+    2100000: madera tabla
+    2100002: maderaColumna
+    2300000: columna6x0.3
+    2300002: plataforma4x4
+    2300004: viga 4x0.3
+    3300000: columna6x0.3
+    3300002: plataforma4x4
+    3300004: viga 4x0.3
+    4300000: plataforma4x4
+    4300002: viga 4x0.3
+    4300004: columna6x0.3
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: caja
-    second: {fileID: 2100000, guid: 9666f5fbfc35ce446ae09cf6cb91736e, type: 2}
+      name: madera tabla
+    second: {fileID: 2100000, guid: 806d89f69b9687e4b91b3c673eff6f93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: maderaColumna
+    second: {fileID: 2100000, guid: c0c137e5de863134385d3209f253fdfb, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: crate
-    second: {fileID: 2800000, guid: e0eb50f51e7534847aec23658b1f24f9, type: 3}
+      name: TexturesCom_WoodRough0089_1_seamless_S
+    second: {fileID: 2800000, guid: fff4d72b1d042c3419137699adbccea8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rough_wood_diff_1k
+    second: {fileID: 2800000, guid: 53f832b40743c2642a1157090a4390e0, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
