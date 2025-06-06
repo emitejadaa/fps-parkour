@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class DineroManager : MonoBehaviour
 {
+    public UiManager uiManager;
     public float playerMoney;
-    public void UpdateMoney(float amount)
+    public bool UpdateMoney(float amount)
     {
-        if (playerMoney + amount < 0)
+        if (playerMoney - amount < 0)
         {
-            //
+            Debug.Log("no alcanza");
+            return false;
         }
         else
         {
-            playerMoney += amount;
+            playerMoney -= amount;
+            uiManager.updateMoney();
+            return true;
         }
 
     }
