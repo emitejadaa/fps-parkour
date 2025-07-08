@@ -7,10 +7,17 @@ using TMPro;
 public class UiManager : MonoBehaviour
 {
     public DineroManager dineroManager;
-    public TMP_Text text;
+    public HealthManager healthManager;
+    public TMP_Text healthText;
+    public TMP_Text moneyText;
 
     public void updateMoney()
     {
-        text.text = ": " + dineroManager.playerMoney;
+        moneyText.text= ": " + dineroManager.playerMoney;
+    }
+    public void updateHealth()
+    {
+        healthText.text = ": " + healthManager.playerHealth;
+
     }
 }
