@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d125015b39e76408353996ca2fc88e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePoints: 0
+  precio: 100
 --- !u!1001 &1024141013323271090
 PrefabInstance:
   m_ObjectHideFlags: 0
